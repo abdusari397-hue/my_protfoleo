@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Abdulbaki Alsari, a Full Stack Developer skilled in React, TypeScript, Node.js, Python, Django, Flask, FastAPI, and Tailwind CSS.">
+    <title>Abdulbaki Alsari | Full Stack Developer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif']
+                    },
+                    colors: {
+                        ink: '#111827',
+                        paper: '#f8fafc',
+                        ocean: '#2563eb',
+                        mint: '#0f766e',
+                        amber: '#b45309'
+                    }
+                }
+            }
+        };
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <style>
+        /* Smooth transitions for theme switching */
+        body { transition: background-color 0.3s ease, color 0.3s ease; }
+        .theme-transition { transition: all 0.3s ease; }
+    </style>
+</head>
+<body class="bg-paper text-slate-700 font-sans antialiased dark:bg-[#0a0a0a] dark:text-slate-300">
+    
+    <header class="sticky top-0 z-40 border-b border-slate-200 bg-white/95 backdrop-blur dark:bg-[#0a0a0a]/80 dark:border-white/10 theme-transition">
+        <nav class="mx-auto flex max-w-6xl items-center justify-between px-5 py-4">
+            <a href="#home" class="text-lg font-extrabold tracking-tight text-ink dark:text-white">Abdulbaki<span class="text-ocean">.</span></a>
+            
+            <div class="hidden items-center gap-7 text-sm font-semibold text-slate-600 dark:text-slate-400 md:flex">
+                <a href="#skills" class="hover:text-ocean dark:hover:text-ocean transition-colors">Skills</a>
+                <a href="#projects" class="hover:text-ocean dark:hover:text-ocean transition-colors">Projects</a>
+                <a href="#experience" class="hover:text-ocean dark:hover:text-ocean transition-colors">Experience</a>
+                <a href="#contact" class="hover:text-ocean dark:hover:text-ocean transition-colors">Contact</a>
+            </div>
+            
+            <div class="flex items-center gap-4">
+                <!-- Dark Mode Toggle -->
+                <button id="theme-toggle" class="flex items-center justify-center w-10 h-10 rounded-full text-slate-500 hover:bg-slate-100 dark:text-slate-400 dark:hover:bg-white/10 transition-colors" aria-label="Toggle Dark Mode">
+                    <i class="fa-solid fa-moon dark:hidden text-lg"></i>
+                    <i class="fa-solid fa-sun hidden dark:block text-lg"></i>
+                </button>
+                
+                <a href="#contact" class="hidden sm:inline-flex h-10 items-center gap-2 rounded-md bg-ink px-4 text-sm font-semibold text-white hover:bg-slate-700 dark:bg-white dark:text-ink dark:hover:bg-slate-200 transition-colors">
+                    <i class="fa-regular fa-paper-plane"></i>
+                    Hire Me
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <main id="home">
+        <section class="mx-auto grid min-h-[calc(100vh-73px)] max-w-6xl items-center gap-12 px-5 py-16 md:grid-cols-[1.15fr_0.85fr]">
+            <div>
+                <p class="mb-5 inline-flex items-center gap-2 rounded-md border border-emerald-200 bg-emerald-50 px-3 py-2 text-sm font-semibold text-mint dark:border-emerald-500/20 dark:bg-emerald-500/10 dark:text-emerald-400 theme-transition">
+                    <span class="h-2 w-2 rounded-full bg-mint dark:bg-emerald-400 animate-pulse"></span>
+                    Available for junior and full stack roles
+                </p>
+                <h1 class="max-w-4xl text-4xl font-extrabold leading-tight tracking-normal text-ink dark:text-white sm:text-5xl lg:text-6xl theme-transition">
+                    Full Stack Developer building clean, practical web applications.
+                </h1>
+                <p class="mt-6 max-w-2xl text-lg leading-8 text-slate-600 dark:text-slate-400 theme-transition">
+                    I'm Abdulbaki Alsari. I work across React, TypeScript, Tailwind CSS, Node.js, and Python frameworks to turn ideas into reliable, user-friendly products.
+                </p>
+                <div class="mt-8 flex flex-wrap gap-3">
+                    <a href="#projects" class="inline-flex h-12 items-center gap-2 rounded-md bg-ocean px-5 font-semibold text-white shadow-sm hover:bg-blue-700 transition-all hover:-translate-y-0.5 hover:shadow-md">
+                        <i class="fa-solid fa-laptop-code"></i>
+                        View Projects
+                    </a>
+                    <a href="tel:+31614309044" class="inline-flex h-12 items-center gap-2 rounded-md border border-slate-300 bg-white px-5 font-semibold text-ink hover:border-slate-400 dark:border-white/10 dark:bg-white/5 dark:text-white dark:hover:bg-white/10 transition-all hover:-translate-y-0.5">
+                        <i class="fa-solid fa-phone"></i>
+                        Call Me
+                    </a>
+                </div>
+                <div class="mt-8 flex items-center gap-5 text-2xl text-slate-500 dark:text-slate-400">
+                    <a href="#" aria-label="GitHub" class="hover:text-ink dark:hover:text-white transition-colors hover:-translate-y-1 block"><i class="fa-brands fa-github"></i></a>
+                    <a href="#" aria-label="LinkedIn" class="hover:text-ocean dark:hover:text-ocean transition-colors hover:-translate-y-1 block"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="mailto:contact@example.com" aria-label="Email" class="hover:text-amber dark:hover:text-amber transition-colors hover:-translate-y-1 block"><i class="fa-regular fa-envelope"></i></a>
+                </div>
+            </div>
+
+            <div class="rounded-xl border border-slate-200 bg-white p-6 shadow-sm dark:border-white/10 dark:bg-[#111] dark:shadow-2xl transition-all duration-300 hover:-translate-y-2 hover:border-ocean/30 dark:hover:border-ocean/40 group relative overflow-hidden">
+                <!-- Abstract dark mode glow -->
+                <div class="absolute -right-20 -top-20 h-64 w-64 rounded-full bg-ocean/20 opacity-0 blur-[60px] transition-opacity duration-500 group-hover:opacity-100 dark:bg-ocean/30"></div>
+                
+                <div class="relative z-10">
+                    <div class="flex items-center gap-4 border-b border-slate-100 pb-5 dark:border-white/5">
+                        <div class="flex h-20 w-20 shrink-0 items-center justify-center rounded-xl bg-slate-100 text-3xl text-ocean dark:bg-ocean/10 transition-colors group-hover:scale-105 duration-300">
+                            <i class="fa-solid fa-code"></i>
+                        </div>
+                        <div>
+                            <h2 class="text-2xl font-bold text-ink dark:text-white">Abdulbaki Alsari</h2>
+                            <p class="mt-1 font-medium text-slate-500 dark:text-slate-400">Full Stack Developer</p>
+                        </div>
+                    </div>
+                    <dl class="mt-6 grid gap-4 text-sm">
+                        <div class="flex items-start justify-between gap-4">
+                            <dt class="font-semibold text-slate-500 dark:text-slate-400">Core</dt>
+                            <dd class="text-right text-ink dark:text-white font-medium">React, TypeScript, Tailwind</dd>
+                        </div>
+                        <div class="flex items-start justify-between gap-4">
+                            <dt class="font-semibold text-slate-500 dark:text-slate-400">Backend</dt>
+                            <dd class="text-right text-ink dark:text-white font-medium">Node.js, Django, Flask, FastAPI</dd>
+                        </div>
+                        <div class="flex items-start justify-between gap-4">
+                            <dt class="font-semibold text-slate-500 dark:text-slate-400">Languages</dt>
+                            <dd class="text-right text-ink dark:text-white font-medium">Arabic, English, Dutch</dd>
+                        </div>
+                        <div class="flex items-start justify-between gap-4">
+                            <dt class="font-semibold text-slate-500 dark:text-slate-400">Phone</dt>
+                            <dd class="text-right text-ink dark:text-white font-medium">+31 614309044</dd>
+                        </div>
+                    </dl>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="border-y border-slate-200 bg-white py-16 dark:border-white/10 dark:bg-transparent theme-transition">
+            <div class="mx-auto max-w-6xl px-5">
+                <div class="mb-8 flex flex-col justify-between gap-4 md:flex-row md:items-end">
+                    <div>
+                        <p class="text-sm font-bold uppercase tracking-wide text-ocean">Skills</p>
+                        <h2 class="mt-2 text-3xl font-extrabold text-ink dark:text-white">Technologies I work with</h2>
+                    </div>
+                    <p class="max-w-xl leading-7 text-slate-600 dark:text-slate-400">A focused stack for building interfaces, APIs, and data-aware features with maintainable code.</p>
+                </div>
+                <div class="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
+                    <article class="rounded-xl border border-slate-200 bg-white p-6 shadow-sm hover:-translate-y-1 hover:border-ocean/40 hover:shadow-md transition-all duration-300 dark:border-white/10 dark:bg-[#111] dark:hover:border-ocean/50">
+                        <i class="fa-brands fa-react mb-4 text-3xl text-ocean"></i>
+                        <h3 class="font-bold text-ink dark:text-white">Frontend</h3>
+                        <p class="mt-3 text-sm leading-6 text-slate-600 dark:text-slate-400">React, TypeScript, JavaScript, HTML5, CSS3, Tailwind CSS.</p>
+                    </article>
+                    <article class="rounded-xl border border-slate-200 bg-white p-6 shadow-sm hover:-translate-y-1 hover:border-mint/40 hover:shadow-md transition-all duration-300 dark:border-white/10 dark:bg-[#111] dark:hover:border-mint/50">
+                        <i class="fa-solid fa-server mb-4 text-3xl text-mint"></i>
+                        <h3 class="font-bold text-ink dark:text-white">Backend</h3>
+                        <p class="mt-3 text-sm leading-6 text-slate-600 dark:text-slate-400">Node.js, Django, Flask, FastAPI, REST APIs, authentication.</p>
+                    </article>
+                    <article class="rounded-xl border border-slate-200 bg-white p-6 shadow-sm hover:-translate-y-1 hover:border-amber/40 hover:shadow-md transition-all duration-300 dark:border-white/10 dark:bg-[#111] dark:hover:border-amber/50">
+                        <i class="fa-solid fa-database mb-4 text-3xl text-amber"></i>
+                        <h3 class="font-bold text-ink dark:text-white">Data</h3>
+                        <p class="mt-3 text-sm leading-6 text-slate-600 dark:text-slate-400">Database design, data processing, API performance, SQL basics.</p>
+                    </article>
+                    <article class="rounded-xl border border-slate-200 bg-white p-6 shadow-sm hover:-translate-y-1 hover:border-rose-600/40 hover:shadow-md transition-all duration-300 dark:border-white/10 dark:bg-[#111] dark:hover:border-rose-500/50">
+                        <i class="fa-solid fa-brain mb-4 text-3xl text-rose-600"></i>
+                        <h3 class="font-bold text-ink dark:text-white">AI Basics</h3>
+                        <p class="mt-3 text-sm leading-6 text-slate-600 dark:text-slate-400">Machine learning concepts, neural networks, and AI ethics.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="mx-auto max-w-6xl px-5 py-16">
+            <div class="mb-8">
+                <p class="text-sm font-bold uppercase tracking-wide text-ocean">Projects</p>
+                <h2 class="mt-2 text-3xl font-extrabold text-ink dark:text-white theme-transition">Portfolio-ready project examples</h2>
+            </div>
+            <div class="grid gap-6 md:grid-cols-3">
+                <article class="group rounded-xl border border-slate-200 bg-white p-5 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-ocean/30 hover:shadow-xl dark:border-white/10 dark:bg-[#111]">
+                    <div class="mb-5 flex h-48 items-center justify-center rounded-lg bg-blue-50 text-5xl text-ocean transition-transform duration-300 group-hover:scale-[1.02] dark:bg-ocean/10">
+                        <i class="fa-solid fa-list-check group-hover:scale-110 transition-transform duration-300"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-ink dark:text-white">Task Management App</h3>
+                    <p class="mt-3 text-sm leading-6 text-slate-600 dark:text-slate-400">A responsive dashboard for creating tasks, filtering work, and tracking progress.</p>
+                    <div class="mt-5 flex flex-wrap gap-2 text-xs font-semibold">
+                        <span class="rounded-md bg-slate-100 px-2.5 py-1.5 text-slate-700 dark:bg-white/10 dark:text-slate-300">React</span>
+                        <span class="rounded-md bg-slate-100 px-2.5 py-1.5 text-slate-700 dark:bg-white/10 dark:text-slate-300">Tailwind</span>
+                        <span class="rounded-md bg-slate-100 px-2.5 py-1.5 text-slate-700 dark:bg-white/10 dark:text-slate-300">TypeScript</span>
+                    </div>
+                </article>
+                <article class="group rounded-xl border border-slate-200 bg-white p-5 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-mint/30 hover:shadow-xl dark:border-white/10 dark:bg-[#111]">
+                    <div class="mb-5 flex h-48 items-center justify-center rounded-lg bg-emerald-50 text-5xl text-mint transition-transform duration-300 group-hover:scale-[1.02] dark:bg-mint/10">
+                        <i class="fa-solid fa-plug group-hover:scale-110 transition-transform duration-300"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-ink dark:text-white">Backend API Service</h3>
+                    <p class="mt-3 text-sm leading-6 text-slate-600 dark:text-slate-400">A REST API with Python, authentication, structured routes, and database operations.</p>
+                    <div class="mt-5 flex flex-wrap gap-2 text-xs font-semibold">
+                        <span class="rounded-md bg-slate-100 px-2.5 py-1.5 text-slate-700 dark:bg-white/10 dark:text-slate-300">Python</span>
+                        <span class="rounded-md bg-slate-100 px-2.5 py-1.5 text-slate-700 dark:bg-white/10 dark:text-slate-300">FastAPI</span>
+                        <span class="rounded-md bg-slate-100 px-2.5 py-1.5 text-slate-700 dark:bg-white/10 dark:text-slate-300">SQL</span>
+                    </div>
+                </article>
+                <article class="group rounded-xl border border-slate-200 bg-white p-5 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-amber/30 hover:shadow-xl dark:border-white/10 dark:bg-[#111]">
+                    <div class="mb-5 flex h-48 items-center justify-center rounded-lg bg-amber-50 text-5xl text-amber transition-transform duration-300 group-hover:scale-[1.02] dark:bg-amber/10">
+                        <i class="fa-solid fa-chart-line group-hover:scale-110 transition-transform duration-300"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-ink dark:text-white">Data Processing Tool</h3>
+                    <p class="mt-3 text-sm leading-6 text-slate-600 dark:text-slate-400">A small utility for cleaning, transforming, and preparing data for reports.</p>
+                    <div class="mt-5 flex flex-wrap gap-2 text-xs font-semibold">
+                        <span class="rounded-md bg-slate-100 px-2.5 py-1.5 text-slate-700 dark:bg-white/10 dark:text-slate-300">Python</span>
+                        <span class="rounded-md bg-slate-100 px-2.5 py-1.5 text-slate-700 dark:bg-white/10 dark:text-slate-300">Data</span>
+                        <span class="rounded-md bg-slate-100 px-2.5 py-1.5 text-slate-700 dark:bg-white/10 dark:text-slate-300">Automation</span>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="experience" class="border-y border-slate-200 bg-white py-16 dark:border-white/10 dark:bg-transparent theme-transition">
+            <div class="mx-auto grid max-w-6xl gap-12 px-5 md:grid-cols-2">
+                <div>
+                    <p class="text-sm font-bold uppercase tracking-wide text-ocean">Experience</p>
+                    <h2 class="mt-2 text-3xl font-extrabold text-ink dark:text-white">Backend Developer</h2>
+                    <p class="mt-2 font-semibold text-slate-500 dark:text-slate-400">2020 - 2021</p>
+                    <ul class="mt-6 space-y-4 leading-7 text-slate-700 dark:text-slate-300">
+                        <li class="flex gap-4 items-start"><i class="fa-solid fa-check mt-1 text-mint"></i><span>Designed and implemented server-side logic using Python frameworks.</span></li>
+                        <li class="flex gap-4 items-start"><i class="fa-solid fa-check mt-1 text-mint"></i><span>Managed database structures and optimized API performance.</span></li>
+                        <li class="flex gap-4 items-start"><i class="fa-solid fa-check mt-1 text-mint"></i><span>Collaborated with front-end teams to integrate UI and backend services.</span></li>
+                    </ul>
+                </div>
+                <div>
+                    <p class="text-sm font-bold uppercase tracking-wide text-ocean">Education</p>
+                    <div class="mt-5 space-y-5">
+                        <article class="rounded-xl border border-slate-200 p-6 hover:border-ocean/30 hover:bg-slate-50 dark:border-white/10 dark:bg-[#111] dark:hover:border-ocean/50 transition-all">
+                            <h3 class="font-bold text-ink dark:text-white text-lg">Elements of AI Professional Certificate</h3>
+                            <p class="mt-1 text-sm font-semibold text-slate-500 dark:text-ocean">University of Helsinki</p>
+                            <p class="mt-3 text-sm leading-6 text-slate-600 dark:text-slate-400">Machine learning, neural networks, and ethical implications of AI.</p>
+                        </article>
+                        <article class="rounded-xl border border-slate-200 p-6 hover:border-ocean/30 hover:bg-slate-50 dark:border-white/10 dark:bg-[#111] dark:hover:border-ocean/50 transition-all">
+                            <h3 class="font-bold text-ink dark:text-white text-lg">Materials Science Engineering</h3>
+                            <p class="mt-1 text-sm font-semibold text-slate-500 dark:text-ocean">University of Aleppo</p>
+                            <p class="mt-3 text-sm leading-6 text-slate-600 dark:text-slate-400">Analytical problem-solving and engineering logic.</p>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="mx-auto max-w-6xl px-5 py-20">
+            <div class="relative overflow-hidden rounded-2xl bg-ink p-8 text-white md:p-12 dark:bg-[#111] dark:border dark:border-white/10 shadow-2xl">
+                <!-- Decorative background elements -->
+                <div class="absolute -right-20 -top-20 h-64 w-64 rounded-full bg-ocean/20 blur-[80px]"></div>
+                <div class="absolute -bottom-20 -left-20 h-64 w-64 rounded-full bg-mint/20 blur-[80px]"></div>
+                
+                <div class="relative z-10 grid gap-10 md:grid-cols-[1fr_auto] md:items-center">
+                    <div>
+                        <p class="text-sm font-bold uppercase tracking-wide text-blue-300 dark:text-ocean">Contact</p>
+                        <h2 class="mt-3 text-4xl font-extrabold tracking-tight">Let's build something useful.</h2>
+                        <p class="mt-5 max-w-2xl text-lg leading-relaxed text-slate-300 dark:text-slate-400">Have a project, internship, or developer role in mind? Reach out and I will get back to you.</p>
+                    </div>
+                    <div class="flex flex-col gap-4 sm:flex-row md:flex-col">
+                        <a href="mailto:contact@example.com" class="inline-flex h-14 items-center justify-center gap-3 rounded-lg bg-white px-8 font-bold text-ink hover:bg-slate-100 hover:scale-105 transition-all dark:bg-ocean dark:text-white dark:hover:bg-blue-600 shadow-lg">
+                            <i class="fa-regular fa-envelope text-lg"></i>
+                            Email Me
+                        </a>
+                        <a href="tel:+31614309044" class="inline-flex h-14 items-center justify-center gap-3 rounded-lg border-2 border-white/20 px-8 font-bold text-white hover:bg-white/10 hover:border-white/40 transition-all dark:border-white/10 dark:hover:bg-white/5">
+                            <i class="fa-solid fa-phone"></i>
+                            +31 614309044
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="border-t border-slate-200 py-10 dark:border-white/10 theme-transition">
+        <div class="mx-auto flex max-w-6xl flex-col items-center justify-between gap-6 px-5 text-sm text-slate-500 dark:text-slate-400 md:flex-row">
+            <p class="font-medium">&copy; 2026 Abdulbaki Alsari. All rights reserved.</p>
+            <div class="flex items-center gap-6 text-2xl">
+                <a href="#" aria-label="GitHub" class="hover:text-ink dark:hover:text-white transition-colors hover:-translate-y-1 block"><i class="fa-brands fa-github"></i></a>
+                <a href="#" aria-label="LinkedIn" class="hover:text-ocean dark:hover:text-ocean transition-colors hover:-translate-y-1 block"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="mailto:contact@example.com" aria-label="Email" class="hover:text-amber dark:hover:text-amber transition-colors hover:-translate-y-1 block"><i class="fa-regular fa-envelope"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Theme toggle logic
+        const themeToggleBtn = document.getElementById('theme-toggle');
+        const htmlClassList = document.documentElement.classList;
+        const moonIcon = themeToggleBtn.querySelector('.fa-moon');
+        const sunIcon = themeToggleBtn.querySelector('.fa-sun');
+        
+        // Function to set theme
+        const setTheme = (isDark) => {
+            if (isDark) {
+                htmlClassList.add('dark');
+                localStorage.theme = 'dark';
+                moonIcon.classList.add('hidden');
+                sunIcon.classList.remove('hidden');
+            } else {
+                htmlClassList.remove('dark');
+                localStorage.theme = 'light';
+                sunIcon.classList.add('hidden');
+                moonIcon.classList.remove('hidden');
+            }
+        };
+
+        // Initialize theme based on preference
+        if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            setTheme(true);
+        } else {
+            setTheme(false);
+        }
+
+        // Toggle on click
+        themeToggleBtn.addEventListener('click', () => {
+            setTheme(!htmlClassList.contains('dark'));
+        });
+    </script>
+</body>
+</html>
